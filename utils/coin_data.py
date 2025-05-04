@@ -9,6 +9,7 @@ def get_latest_boosted_tokens():
     url = "https://api.dexscreener.com/token-boosts/latest/v1"
     response = requests.get(url)
     return response.json()
+    
 
 def search_pairs(query: str):
     url = "https://api.dexscreener.com/latest/dex/search"
